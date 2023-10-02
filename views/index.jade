@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .messageboard
+    h1= title
+    p Welcome to #{title}
+
+    a.postnew(href="/new")
+      .formhead
+        span.material-symbols-outlined forum
+        span Post a message 
+  
+    hr
+    ul.messages 
+      each message in messages
+        li.message
+          span.time #{new Date(message.added).toLocaleTimeString()}
+          span.user(placeholder="your name") #{message.user}
+          span.text(placeholder="type your message") #{message.text}
+
+

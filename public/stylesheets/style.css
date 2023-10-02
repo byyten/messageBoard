@@ -1,0 +1,108 @@
+ /* https://www.pngitem.com/pimgs/m/31-316097_paper-plane-png-paper-airplane-dotted-lines-transparent.png */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('../images/paper-plane-png.png');
+  background-repeat:no-repeat;
+  background-position: top;
+  background-size: 300px;
+}
+
+li.message {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.formhead, 
+.formhead a {
+  font-size: 1rem;
+  display: flex;
+  align-content: center;
+}
+
+
+a {
+  text-decoration: none;
+  color: #00B7FF;
+}
+
+form {
+  border: none;
+  margin:2rem;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.inputs {
+  display: flex;
+  /* justify-content: space-evenly; */
+  max-width: 600px;
+}
+
+div.user, div.textarea,
+form.user, form.textarea {
+  display:flex;
+  flex-direction: column;
+  appearance: none;
+  margin: 0 1rem;
+} 
+label {
+  font-size: .7rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+ul { list-style: none ; }
+
+span {
+  display: inline-block;
+  margin:1rem 0.5rem;
+}
+span.material-symbols-outlined {
+  font-size: 20px;
+}
+span.user,
+span.time { width: 5rem }
+span.text { width: 15rem }
+
+textarea { width: 190px }
+
+span.time{ font-size: 0.8rem }
+
+.submit {
+  display: flex;
+  justify-content: end;
+  margin-top:2rem;
+}
+
+button {
+  width: 6rem;
+  height: 2rem;
+  border:none;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+}
+
+
+/* .material-symbols-outlined {
+  font-size: 14px;
+} */
+
+.formbody {
+  display:flex;
+  flex-direction: column;
+}

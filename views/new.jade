@@ -1,0 +1,27 @@
+extends layout 
+
+block content 
+    .messageboard
+        h1= title
+        .formhead
+            a(href="/")
+                span.material-symbols-outlined home
+                span Return
+        
+        //- a(href="/") Return to Message board 
+        hr 
+        form(method="post", action="/new")
+            .formhead
+                span.material-symbols-outlined chat
+                span Post a message 
+            .formbody 
+                .inputs
+
+                    .user
+                        label(for="user") Name 
+                        input(name="user")
+                    .textarea 
+                        label(for="text") Message 
+                        textarea(name="text")
+                .submit
+                    button(type="submit") Submit 
